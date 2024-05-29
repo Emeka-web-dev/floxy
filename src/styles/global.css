@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.ubuntu-sans-mono-header {
+  font-family: "Ubuntu Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* fonts */
+  --font-helveticaneue: HelveticaNeue;
+  --font-poppins: Poppins;
+  --font-consolas: Consolas;
+  --font-vcr-osd-mono: "Ubuntu Sans Mono", monospace;
+  --font-inter: Inter;
+  --font-font-awesome-5-free: "Font Awesome 5 Free";
+
+  /* font sizes */
+  --font-size-base-8: 16.8px;
+  --font-size-xs-2: 11.2px;
+  --font-size-xs-8: 11.8px;
+  --font-size-29xl: 48px;
+  --font-size-3xs: 10px;
+  --font-size-xs-3: 11.3px;
+  --font-size-sm: 14px;
+  --font-size-xs-1: 11.1px;
+  --font-size-xl-2: 20.2px;
+  --font-size-lg: 18px;
+  --font-size-5xl: 24px;
+  --font-size-13xl: 32px;
+  --font-size-2xs-6: 10.6px;
+
+  /* Colors */
+  --color-black: #000;
+  --color-darkslateblue: #58588d;
+  --color-gray-100: #050105;
+  --color-gray-200: #010101;
+  --color-fuchsia-100: rgba(255, 19, 217, 0.1);
+  --color-red: #ff0000;
+  --color-lime: #00ff1a;
+  --color-violet: #e086ff;
+  --base-white: #fff;
+  --color-darkgray: #acacab;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+  --br-3xs-5: 9.5px;
+  --br-mid: 17px;
+}

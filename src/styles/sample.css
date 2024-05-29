@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  background: #111;
+  padding: 20px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.connect-wallet {
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-wallet:hover {
+  background-color: #3700b3;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5em;
+}
+
+.hero-content p {
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3700b3;
+}
+
+.hero-image img {
+  max-width: 100%;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  background-color: #222;
+}
+
+.stat-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 0;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.feature-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-content {
+  max-width: 50%;
+}
+
+.card-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.card-content p {
+  margin-bottom: 1.5em;
+}
+
+.card-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* How It Works Section */
+.how-it-works {
+  padding: 60px 0;
+  background-color: #222;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.step {
+  width: 22%;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Investors Section */
+.investors {
+  padding: 60px 0;
+}
+
+.investors h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.investor-logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.investor-logo {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+  width: 22%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #111;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer h4 {
+  margin-bottom: 1em;
+}
+
+.footer a {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .feature-card,
+  .steps .step,
+  .investor-logo {
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav a {
+    margin: 10px 0;
+  }
+}
