@@ -538,11 +538,11 @@ nav a:hover,
   width: 60%;
   height: 260px;
   top: 0px;
-  right: 30%;
+  right: 90%;
   pointer-events: none;
   /* border-radius: 120px 20px; */
   opacity: 0.14;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   box-shadow: rgb(0 143 253) 20px 250px 300px;
   transform: rotate(15deg) translateY(-175%) translateZ(0px);
 }
@@ -563,7 +563,7 @@ nav a:hover,
   width: 60%;
   height: 260px;
   top: 50%;
-  right: 70%;
+  right: 110%;
   pointer-events: none;
   /* border-radius: 120px 20px; */
   opacity: 0.5;
@@ -592,7 +592,7 @@ nav a:hover,
   pointer-events: none;
   /* border-radius: 120px 20px; */
   opacity: 0.14;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   box-shadow: rgb(0 143 253) 20px 250px 300px;
   transform: rotate(15deg) translateY(-175%) translateZ(0px);
 }
