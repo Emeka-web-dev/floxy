@@ -1,0 +1,264 @@
+.claim-page {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  background-color: var(--color-black);
+  overflow-x: hidden;
+  color: var(--base-white);
+  min-height: 100vh;
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* font-family: var(--font-vcr-osd-mono); */
+  /* padding-left: -500px; */
+}
+
+.sidebar {
+  grid-column: span 3 / span 3;
+  border-right: 1px solid #acacab;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navigation {
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+  /* margin: ; */
+}
+
+.navigation > .header {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.navigation > .header::before {
+  content: "";
+  display: block;
+  background: linear-gradient(104.38deg, #580077, #8e00c0 53.62%, #bd00ff);
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0;
+  left: 0;
+  height: 2px;
+  /* width: 40px; */
+  /* border: 1px solid white; */
+}
+
+.navigation > .header > img {
+  width: 40px;
+  height: auto;
+}
+
+.navigation > .header > h1 {
+  text-transform: uppercase;
+  font-family: var(--font-vcr-osd-mono);
+}
+
+.header-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-pool h2 {
+  font-family: var(--font-vcr-osd-mono);
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.navigation-item {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: large;
+  color: var(--color-violet);
+  gap: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.6rem;
+  padding-left: 2rem;
+}
+
+.navigation-item.active,
+.navigation-item:hover {
+  background: linear-gradient(
+    to right,
+    rgba(105, 211, 228, 0.5),
+    rgb(28, 34, 59)
+  );
+  box-shadow: 0 1.3px 2.61px rgba(16, 24, 40, 0.05);
+}
+.navigation-item > svg {
+  width: 20px;
+}
+
+.button13 {
+  box-shadow: 0 0.8px 1.55px rgba(16, 24, 40, 0.05);
+  border-radius: 10px;
+  background: linear-gradient(104.38deg, #580077, #8e00c0 53.62%, #bd00ff);
+  border: 0.8px solid var(--color-fuchsia-200);
+  box-sizing: border-box;
+  padding: 0.7rem 4rem;
+}
+
+.main {
+  grid-column: span 9 / span 9;
+  min-height: 100vh;
+  position: relative;
+}
+
+.header-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  column-gap: 2rem;
+  opacity: 0.8;
+  width: 100%;
+  font-family: var(--font-vcr-osd-mono);
+}
+
+.header-items-button {
+  cursor: pointer;
+}
+
+.toggle {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+nav > div {
+  padding-top: 2rem;
+  width: 100%;
+}
+nav a {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+nav a:hover,
+.active {
+  background: linear-gradient(
+    to right,
+    rgba(105, 211, 228, 0.5),
+    rgb(28, 34, 59)
+  );
+  box-shadow: 0 1.3px 2.61px rgba(16, 24, 40, 0.05);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.navbar.open {
+  right: 0;
+}
+
+.overlay.visible {
+  visibility: visible;
+  opacity: 0;
+}
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    grid-column: span 12 / span 12;
+  }
+
+  .header-items {
+    display: none;
+  }
+
+  .toggle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  nav.open {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20rem;
+    background-color: #181818;
+    color: #fff;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+}
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  /* border: 1px solid #444; */
+  padding: 10px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  /* background-color: #222; */
+  white-space: nowrap;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+td img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+a {
+  color: #a15dfd;
+  text-decoration: none;
+}
+
+.red {
+  color: red;
+}
