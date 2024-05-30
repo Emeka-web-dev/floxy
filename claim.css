@@ -295,8 +295,8 @@ nav a:hover,
 .claim-contents {
   background: linear-gradient(
     to right,
-    rgba(200, 80, 210, 0.5),
-    rgb(28, 34, 59)
+    rgba(200, 80, 210, 0.2),
+    rgba(28, 34, 59, 0.6)
   );
   padding: 1.5rem;
   width: 80%;
@@ -304,6 +304,11 @@ nav a:hover,
   margin-right: auto;
   border-radius: 20px;
   border: 1px solid rgb(200, 80, 210);
+  font-family: var(--font-vcr-osd-mono);
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .claim-total {

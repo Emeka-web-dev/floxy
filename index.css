@@ -344,6 +344,12 @@
 
 .block {
   display: block;
+  background: linear-gradient(to right, #e68aee, #69d3e4); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
 }
 
 footer {
@@ -574,8 +580,8 @@ nav a:hover,
   position: absolute;
   width: 60%;
   height: 260px;
-  top: 80;
-  right: 90%;
+  top: 50;
+  right: 50%;
   pointer-events: none;
   border-radius: 120px 20px;
   opacity: 0.14;
