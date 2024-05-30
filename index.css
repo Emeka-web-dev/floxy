@@ -37,7 +37,7 @@
 }
 
 .header-items-button {
-  cursor: pointer;
+  color: var(--color-darkgray);
 }
 
 .hero-section {
@@ -595,4 +595,8 @@ nav a:hover,
   /* border: 1px solid white; */
   box-shadow: rgb(0 143 253) 20px 250px 300px;
   transform: rotate(15deg) translateY(-175%) translateZ(0px);
+}
+
+.header a {
+  color: var(--color-darkgray);
 }
