@@ -12,7 +12,6 @@
   padding-left: -500px;
 }
 
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -210,12 +209,11 @@
   background-color: #3700b3;
 }
 
-
 .card-image img {
   width: 400px;
   height: auto;
   border-radius: 10px;
- transform: rotate(-8deg);
+  transform: rotate(-8deg);
 }
 
 @media (max-width: 768px) {
@@ -487,7 +485,7 @@ nav a:hover,
     display: none;
   }
 
-  .header .header-items-button{
+  .header .header-items-button {
     display: none;
   }
 
@@ -495,8 +493,6 @@ nav a:hover,
     display: flex;
     float: left;
   }
-
-  
 
   .sidebar {
     display: none;
@@ -535,7 +531,6 @@ nav a:hover,
     display: flex;
     flex-direction: column-reverse;
   }
-
 }
 
 .gradient {
@@ -545,7 +540,7 @@ nav a:hover,
   top: 0px;
   right: 30%;
   pointer-events: none;
-  border-radius: 120px 20px;
+  /* border-radius: 120px 20px; */
   opacity: 0.14;
   border: 1px solid white;
   box-shadow: rgb(0 143 253) 20px 250px 300px;
@@ -558,7 +553,7 @@ nav a:hover,
   top: 50px;
   right: 90%;
   pointer-events: none;
-  border-radius: 120px 20px;
+  /* border-radius: 120px 20px; */
   opacity: 0.6;
   box-shadow: rgb(245, 0, 253) 20px 250px 300px;
   transform: rotate(15deg) translateY(-175%) translateZ(0px);
@@ -570,7 +565,7 @@ nav a:hover,
   top: 50%;
   right: 70%;
   pointer-events: none;
-  border-radius: 120px 20px;
+  /* border-radius: 120px 20px; */
   opacity: 0.5;
   box-shadow: rgb(0 143 253) 20px 250px 300px;
   transform: rotate(15deg) translateY(-175%) translateZ(0px);
@@ -595,7 +590,7 @@ nav a:hover,
   top: 0px;
   right: 30%;
   pointer-events: none;
-  border-radius: 120px 20px;
+  /* border-radius: 120px 20px; */
   opacity: 0.14;
   border: 1px solid white;
   box-shadow: rgb(0 143 253) 20px 250px 300px;
