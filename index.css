@@ -1,6 +1,6 @@
 .landing-page {
   width: 100%;
-  /* position: relative; */
+  position: relative;
   background-color: var(--color-black);
 
   overflow-x: hidden;
@@ -12,16 +12,6 @@
   padding-left: -500px;
 }
 
-/* .vector-parent {
-    position: absolute;
-    top: 748.9px;
-    left: 173px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 17.8px;
-  } */
 
 .header {
   display: flex;
@@ -33,7 +23,9 @@
   background-color: var(--color-gray-200);
   border-bottom: 1px solid #030c18;
   box-sizing: border-box;
-  height: 72px;
+  /* height: 4.2rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-size: var(--font-size-lg);
   font-family: var(--font-poppins);
 }
@@ -171,6 +163,7 @@
   border-left-width: 0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  overflow: hidden;
 }
 
 .feature-card.right {
@@ -190,6 +183,7 @@
 .card-content {
   max-width: 50%;
   padding-right: 10px;
+  overflow: hidden;
 }
 
 .card-content h2 {
@@ -216,10 +210,12 @@
   background-color: #3700b3;
 }
 
+
 .card-image img {
   width: 400px;
   height: auto;
   border-radius: 10px;
+ transform: rotate(-8deg);
 }
 
 @media (max-width: 768px) {
@@ -432,4 +428,176 @@ footer {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem /* 16px */ * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.5rem /* 16px */ * var(--tw-space-y-reverse));
+}
+
+#menu-toggle {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+nav > div {
+  padding-top: 2rem;
+  width: 100%;
+}
+nav a {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+nav a:hover,
+.active {
+  background: linear-gradient(
+    to right,
+    rgba(105, 211, 228, 0.5),
+    rgb(28, 34, 59)
+  );
+  box-shadow: 0 1.3px 2.61px rgba(16, 24, 40, 0.05);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.navbar.open {
+  right: 0;
+}
+
+.overlay.visible {
+  visibility: visible;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-items > h1 {
+    display: none;
+  }
+
+  .header .header-items-button{
+    display: none;
+  }
+
+  #menu-toggle {
+    display: flex;
+    float: left;
+  }
+
+  
+
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    grid-column: span 12 / span 12;
+  }
+
+  .header-items {
+    display: none;
+  }
+
+  .toggle {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  nav.open {
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 20rem;
+    background-color: #181818;
+    color: #fff;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+  }
+
+  .hero-section {
+    /* grid-template-columns: repeat(1, minmax(0, 1fr)); */
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
+
+.gradient {
+  position: absolute;
+  width: 60%;
+  height: 260px;
+  top: 0px;
+  right: 30%;
+  pointer-events: none;
+  border-radius: 120px 20px;
+  opacity: 0.14;
+  border: 1px solid white;
+  box-shadow: rgb(0 143 253) 20px 250px 300px;
+  transform: rotate(15deg) translateY(-175%) translateZ(0px);
+}
+.gradient2 {
+  position: absolute;
+  width: 60%;
+  height: 200px;
+  top: 50px;
+  right: 90%;
+  pointer-events: none;
+  border-radius: 120px 20px;
+  opacity: 0.6;
+  box-shadow: rgb(245, 0, 253) 20px 250px 300px;
+  transform: rotate(15deg) translateY(-175%) translateZ(0px);
+}
+.gradient3 {
+  position: absolute;
+  width: 60%;
+  height: 260px;
+  top: 50%;
+  right: 70%;
+  pointer-events: none;
+  border-radius: 120px 20px;
+  opacity: 0.5;
+  box-shadow: rgb(0 143 253) 20px 250px 300px;
+  transform: rotate(15deg) translateY(-175%) translateZ(0px);
+}
+.gradient4 {
+  position: absolute;
+  width: 60%;
+  height: 260px;
+  top: 80;
+  right: 90%;
+  pointer-events: none;
+  border-radius: 120px 20px;
+  opacity: 0.14;
+  border: 1px solid white;
+  box-shadow: rgb(0 143 253) 20px 250px 300px;
+  transform: rotate(15deg) translateY(-175%) translateZ(0px);
+}
+.gradient {
+  position: absolute;
+  width: 60%;
+  height: 260px;
+  top: 0px;
+  right: 30%;
+  pointer-events: none;
+  border-radius: 120px 20px;
+  opacity: 0.14;
+  border: 1px solid white;
+  box-shadow: rgb(0 143 253) 20px 250px 300px;
+  transform: rotate(15deg) translateY(-175%) translateZ(0px);
 }
