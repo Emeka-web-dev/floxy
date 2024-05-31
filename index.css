@@ -1,15 +1,13 @@
 .landing-page {
   width: 100%;
+  max-width: 85rem;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   background-color: var(--color-black);
-
   overflow-x: hidden;
-  /* font-size: 30px; */
-  /* text-align: left; */
-  /* font-size: var(--font-size-29xl); */
   color: var(--base-white);
   font-family: var(--font-vcr-osd-mono);
-  padding-left: -500px;
 }
 
 .header {
@@ -539,68 +537,57 @@ nav a:hover,
   }
 }
 
-.gradient {
-  position: absolute;
-  width: 60%;
-  height: 260px;
-  top: 0px;
-  right: 90%;
-  pointer-events: none;
-  /* border-radius: 120px 20px; */
-  opacity: 0.14;
-  /* border: 1px solid white; */
-  box-shadow: rgb(0 143 253) 20px 250px 300px;
-  transform: rotate(15deg) translateY(-175%) translateZ(0px);
-}
-.gradient2 {
-  position: absolute;
-  width: 60%;
-  height: 200px;
-  top: 50px;
-  right: 90%;
-  pointer-events: none;
-  /* border-radius: 120px 20px; */
-  opacity: 0.6;
-  box-shadow: rgb(245, 0, 253) 20px 250px 300px;
-  transform: rotate(15deg) translateY(-175%) translateZ(0px);
-}
+.gradient,
 .gradient3 {
   position: absolute;
-  width: 60%;
-  height: 260px;
-  top: 50%;
-  right: 110%;
-  pointer-events: none;
-  /* border-radius: 120px 20px; */
-  opacity: 0.5;
-  box-shadow: rgb(0 143 253) 20px 250px 300px;
-  transform: rotate(15deg) translateY(-175%) translateZ(0px);
+  left: -5%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 143, 253, 0.5),
+    rgba(0, 143, 253, 0.02)
+  );
+  z-index: -1;
+  border-radius: 50%;
+  box-shadow: rgba(0, 143, 253, 0.4) 0px 0px 100px;
 }
-.gradient4 {
+.gradient2,
+.gradient4,
+.gradient5 {
   position: absolute;
-  width: 60%;
-  height: 260px;
-  top: 50;
-  right: 50%;
-  pointer-events: none;
-  border-radius: 120px 20px;
-  opacity: 0.14;
-  border: 1px solid white;
-  box-shadow: rgb(0 143 253) 20px 250px 300px;
-  transform: rotate(15deg) translateY(-175%) translateZ(0px);
+  right: -5%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(245, 0, 253, 0.5),
+    rgba(245, 0, 253, 0.02)
+  );
+  /* z-index: 1; */
+  border-radius: 50%;
+  box-shadow: rgba(245, 0, 253, 0.4) 0px 0px 100px;
 }
-.gradient {
-  position: absolute;
-  width: 60%;
-  height: 260px;
-  top: 0px;
-  right: 30%;
-  pointer-events: none;
-  /* border-radius: 120px 20px; */
-  opacity: 0.14;
+
+.gradient2 {
+  top: 600px;
   /* border: 1px solid white; */
-  box-shadow: rgb(0 143 253) 20px 250px 300px;
-  transform: rotate(15deg) translateY(-175%) translateZ(0px);
+}
+
+.gradient {
+  top: 1100px;
+}
+
+.gradient3 {
+  top: 2200px;
+}
+
+.gradient4 {
+  top: 1800px;
+}
+
+.gradient5 {
+  top: 2800px;
 }
 
 .header a {
